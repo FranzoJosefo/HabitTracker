@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         HabitDbHelper mDbHelper = new HabitDbHelper(this);
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
 
-        //TODO Create Projection + Selection and Selection Args if needed, getRedeableDataBase (SQLiteDatabase db), db.query, return Cursor
         String[] projection = {
                 HabitEntry._ID,
                 HabitEntry.COLUMN_HABIT_NAME,
